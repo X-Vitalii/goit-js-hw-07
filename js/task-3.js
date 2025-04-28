@@ -3,8 +3,8 @@ userNameElem.addEventListener('input', e => {
     const name = userNameElem.value.trim();
     const spanElem = document.querySelector('#name-output');    
    if (name.length > 0) {
-        spanElem.innerHTML = (`<span id="name-output">${name}</span>`);
+        spanElem.textContent = name;
     } else {
-        spanElem.innerHTML = (`<span id="name-output">Anonymous</span>`);
+        spanElem.textContent = 'Anonymous';
     }
 });
